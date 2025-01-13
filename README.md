@@ -18,3 +18,17 @@ This test set cycles through happy path and common errors on the Down Payment, H
 The test set driven through json, and then parametrized through a `forEach` test allows for quick addition and scaling of new tests. 
 
 A validator function was added to the general `commands.js` file which accepts an error message passed through the json, and verifies it's presence when conditions are met.
+
+# Running Tests
+
+To run tests via CLI: 
+
+```
+npx cypress run
+```
+
+To run a specific spec file via CLI:
+
+```
+npx cypress run --spec "cypress/e2e/my-spec.cy.js"
+```
